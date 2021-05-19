@@ -6,7 +6,7 @@
         <input class="input-field" type="text" placeholder="Search" />
       </div>
     </div>
-    <Empty class="empty" />
+    <Empty class="empty" v-if="1 == 23" />
     <ItemCard name="prueba" />
     <ItemCard name="prueba" />
     <ItemCard name="prueba" />
@@ -59,8 +59,11 @@ export default {
 
 .main-search {
   padding: 35px 30px;
-
+  height: calc(100vh - 155px);
+  overflow-y: scroll;
+  
   .search-container {
+    margin-bottom: 30px;
     .search-input {
       display: flex;
       flex-flow: row nowrap;

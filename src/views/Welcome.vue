@@ -1,21 +1,45 @@
 <template>
-  <div class="main-welcome">
+  <Loader v-if="ready" />
+  <div class="main-welcome animate__animated animate__fadeIn" v-if="!ready">
     <div class="logo">
       <img src="../assets/img/pokemon-logo.svg" alt="pokemon" />
     </div>
     <div class="description">
       <h1>Welcome to Pokédex</h1>
-      <p>The digital encyclopedia created by Professor Oak is an invaluable tool to Trainers in the Pokémon world.</p>
+      <p>
+        The digital encyclopedia created by Professor Oak is an invaluable tool
+        to Trainers in the Pokémon world.
+      </p>
     </div>
     <div class="get-started">
-      <button>Get started</button>
+      <button @click="goToSearch">Get started</button>
     </div>
   </div>
 </template>
 
 <script>
+import Loader from "@/components/Loader.vue";
+
 export default {
-  name: 'Welcome'
+  name: "Welcome",
+  components: {
+    Loader,
+  },
+  methods: {
+    goToSearch() {
+      this.$router.push("/search");
+    },
+  },
+  data() {
+    return {
+      ready: true,
+    };
+  },
+  created() {
+    setTimeout(() => {
+      this.ready = false;
+    }, 500);
+  },
 };
 </script>
 
@@ -43,7 +67,5 @@ export default {
       @include orange-button;
     }
   }
-
-
 }
 </style>
