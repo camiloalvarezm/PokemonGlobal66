@@ -3,20 +3,36 @@
     <div class="search-container">
       <div class="search-input">
         <i class="fas fa-search"></i>
-        <input class="input-field" type="text" />
+        <input class="input-field" type="text" placeholder="Search"/>
       </div>
     </div>
-    <Empty />
+    <Empty class="empty"/>
+    <ItemCard name="prueba"/>
+    <ItemCard name="prueba"/>
+    <ItemCard name="prueba"/>
+    <ItemCard name="prueba"/>
+    <ItemCard name="prueba"/>
+    <ItemCard name="prueba"/>
+    <ItemCard name="prueba"/>
+    <ItemCard name="prueba"/>
+    <ItemCard name="prueba"/>
+    <ItemCard name="prueba"/>
+    <ItemCard name="prueba"/>
+    <ItemCard name="prueba"/>
+    <ItemCard name="prueba"/>
+    <ItemCard name="prueba"/>
   </div>
 </template>
 
 <script>
 import Empty from "@/components/Empty.vue";
+import ItemCard from "@/components/ItemCard.vue";
 
 export default {
   name: "Search",
   components: {
     Empty,
+    ItemCard
   },
 };
 </script>
@@ -53,6 +69,10 @@ export default {
         }
       }
     }
+  }
+
+  .empty {
+      margin-bottom: 35px;
   }
 }
 

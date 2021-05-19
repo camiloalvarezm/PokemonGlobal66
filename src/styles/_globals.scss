@@ -8,9 +8,14 @@ body {
   font-family: "Lato", sans-serif;
 }
 
-h1 {
+h1, h2, h3 {
   color: $color-black;
 }
+
+h3 {
+  font-size: 22px;
+}
+
 
 p {
   color: $color-darkgray;
