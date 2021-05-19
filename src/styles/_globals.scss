@@ -1,0 +1,17 @@
+h1 {
+    color: $color-black;
+}
+
+p {
+    color: $color-darkgray;
+}
+
+button {
+  cursor: pointer; 
+  border-radius: 60px;
+  color: white;
+  height: 44px;
+  width: 150px;
+  font-size: 18px;
+  font-weight: bold;
+}
