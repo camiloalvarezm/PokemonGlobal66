@@ -25,7 +25,7 @@
 
   <div class="navbar">
     <div class="actions">
-      <button @click="showAlert"><i class="fas fa-list"></i> All</button>
+      <button><i class="fas fa-list"></i> All</button>
       <button><i class="fas fa-star"></i> Favorites</button>
     </div>
   </div>
@@ -50,9 +50,6 @@ export default {
     }
   },
   methods: {
-    showAlert() {
-      this.$swal('Hola mundo');
-    }
   }
 };
 </script>

@@ -40,3 +40,12 @@ button {
 .swal2-content {
   padding: 0 !important;
 }
+
+.swal2-close {
+  top: 20px !important;
+  right: 20px !important;
+  width: .8em !important;
+  height: .8em !important;
+  border-radius: 50% !important;
+  background-color: white !important;
+}
