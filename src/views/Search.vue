@@ -25,11 +25,12 @@
 
   <div class="navbar">
     <div class="actions">
-      <!-- <button :class="{'background-color': allSelected ? 'blue' : 'black'}"><i class="fas fa-list"> All</i></button> -->
-      <button><i class="fas fa-list"></i> All</button>
+      <button @click="showAlert"><i class="fas fa-list"></i> All</button>
       <button><i class="fas fa-star"></i> Favorites</button>
     </div>
   </div>
+
+
 </template>
 
 <script>
@@ -40,7 +41,18 @@ export default {
   name: "Search",
   components: {
     Empty,
-    ItemCard,
+    ItemCard
+  },
+  data() {
+    return {
+      allSelected: true,
+      favoritesSelected: false
+    }
+  },
+  methods: {
+    showAlert() {
+      this.$swal('Hola mundo');
+    }
   }
 };
 </script>
