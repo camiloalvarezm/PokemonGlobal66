@@ -1,5 +1,5 @@
 <template>
-  <div class="main-container">
+  <div class="main-welcome">
     <div class="logo">
       <img src="../assets/img/pokemon-logo.svg" alt="pokemon" />
     </div>
@@ -17,10 +17,10 @@
 export default {};
 </script>
 
-<style lang="scss">
+<style lang="scss" scoped>
 @import "../styles/main.scss";
 
-.main-container {
+.main-welcome {
   @include max-width(1200px);
   @include flex-center;
   flex-flow: column nowrap;
