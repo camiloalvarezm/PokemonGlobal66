@@ -13,7 +13,7 @@ Para el almacenamiento de los favoritos se uso del localstorage.
 ```
 
 ### Despliegue
-Haz click en [Pokédex](http://pokedex.skyservants.com) para obtener una vista previa de la app.
+Haz click en [Pokédex](https://dazzling-nobel-fdd874.netlify.app/) para obtener una vista previa de la app.
 
 ## Project setup
 ```
