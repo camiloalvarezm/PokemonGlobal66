@@ -8,7 +8,7 @@ body {
   font-family: "Lato", sans-serif;
 }
 
-h1, h2, h3 {
+h1, h2, h3, h4, h5, h6 {
   color: $color-black;
 }
 
@@ -48,4 +48,16 @@ button {
   height: .8em !important;
   border-radius: 50% !important;
   background-color: white !important;
+}
+
+@keyframes floating {
+  0% {
+      transform: translateY(0px);
+  }
+  50% {
+      transform: translateY(20px);
+  }
+  100% {
+      transform: translateY(0px);
+  }
 }

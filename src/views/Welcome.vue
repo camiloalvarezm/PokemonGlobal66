@@ -1,6 +1,5 @@
 <template>
-  <Loader v-if="ready" />
-  <div class="main-welcome animate__animated animate__fadeIn" v-if="!ready">
+  <div class="main-welcome animate__animated animate__fadeIn">
     <div class="logo">
       <img src="../assets/img/pokemon-logo.svg" alt="pokemon" />
     </div>
@@ -18,28 +17,15 @@
 </template>
 
 <script>
-import Loader from "@/components/Loader.vue";
+
 
 export default {
   name: "Welcome",
-  components: {
-    Loader,
-  },
   methods: {
     goToSearch() {
       this.$router.push("/search");
     },
-  },
-  data() {
-    return {
-      ready: true,
-    };
-  },
-  created() {
-    setTimeout(() => {
-      this.ready = false;
-    }, 500);
-  },
+  }
 };
 </script>
 
